@@ -1,3 +1,2 @@
 /venv/
-/pizza_django/pizza_django/skey.py
-/pizza_django/db.sqlite3
+/pizza_django/pizza_django/config.py

@@ -1,0 +1,1 @@
+[{"model": "products.product", "pk": 1, "fields": {"name": "ѕицца", "description": "—ыры, колбасы", "price": "600.00", "image": "product_images/forbackground.jpeg", "category": 1}}]

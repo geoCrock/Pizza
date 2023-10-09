@@ -1,0 +1,41 @@
+{% extends 'products/base.html' %}
+{% load static %}
+
+{% block css %}
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+{% endblock %}
+
+
+{% block content %}
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          {% for category in categories %}
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">{{ category.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="row row-cols-1 row-cols-md-5 g-3 m-0">
+    {% for product in products %}
+    <div class="col">
+      <div class="card h-100">
+        <img src="{{ product.image.url }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">{{ product.name }} ({{ product.price }} рублей)</h4>
+          <p class="card-text">{{ product.description }} .</p>
+          <a href="#" class="btn btn-warning">Купить</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

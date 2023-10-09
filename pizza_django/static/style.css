@@ -1,0 +1,16 @@
+
+.viter {
+    margin-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+
+.block {
+    margin: 5px;
+}
+
+.position{
+    width: 100%;
+    top: 0;
+}

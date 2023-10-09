@@ -1,2 +1,2 @@
-/venv/*
-/pizza_django/pizza_django/config.py
+venv
+config.py

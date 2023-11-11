@@ -36,11 +36,15 @@ def registration(request):
 
 def profile(request):
     if request.method == 'POST':
-        form = UserProfileForm(data=request.POST)
+        form = UserProfileForm(instance=request.user, data=request.POST)
         if form.is_valid():
             form.save()
             messages.success(request, 'Поздравляем! Вы успешно зарегестрировались!')
             return HttpResponseRedirect(reverse('users:profile'))
+        else:
+            print(form.errors)
+    else:
+        form = UserProfileForm(instance=request.user)
     form = UserProfileForm()
     context = {'form': form}
     return render(request, 'users/profile.html', context)

@@ -4,7 +4,7 @@ The project for study Django.
 
 #### Stack:
 
-- [Python](https://www.python.org/downloads/)
+- [Python](https://www.python.org/)
 - [Django](https://www.djangoproject.com/)
 
 ## Local Developing

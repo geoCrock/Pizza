@@ -2,10 +2,8 @@
 
 The project for study Django.
 
-#### Stack:
+At the moment you can add goods(add image, name, price, description) to the site, add categories, registrate your own account. Also there is an admin panel from django admin.
 
-- [Python](https://www.python.org/)
-- [Django](https://www.djangoproject.com/)
 
 ## Local Developing
 

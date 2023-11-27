@@ -2,6 +2,8 @@
 
 The project for study Django.
 
+It will be like a real website that sells pizza.
+
 At the moment you can add goods(add image, name, price, description) to the site, add categories, registrate your own account. Also there is an admin panel from django admin.
 
 
